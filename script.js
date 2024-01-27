@@ -4,13 +4,33 @@ if (document.querySelector("#list")) {
   // Cargamos el LocalStorage a un array
 
   function addMain() {
-    if (localStorage.getItem("country")) {
-      let completoFav = [];
-      let localStorageFav = localStorage.getItem("country");
-      completoFav = JSON.parse(localStorageFav);
-      console.log(completoFav);
-    }
-    cardsArray.forEach((country) => {});
+    let completoFav = [];
+    let localStorageFav = localStorage.getItem("country");
+    completoFav = JSON.parse(localStorageFav);
+    console.log(completoFav);
+    completoFav.forEach((countryFav) => {
+      // Pinto los elementos en la página principal
+      console.log(countryFav);
+      document.querySelector("#pais1").innerHTML = `
+        <h1>${countryFav.paisSpa}</h1>
+    `;
+
+      document.querySelector("#informacion1-1").innerHTML = `
+    <img src="${countryFav.paisFlag}">
+    <h6 id="subt2">Bandera de ${countryFav.paisSpa}}</h6>
+    `;
+
+      document.querySelector("#informacion1-2").innerHTML = `
+    <h4>Capital: ${countryFav.paisCapital}</h4>
+    <h4>Continente: ${countryFav.paisContinent}</h4>
+    <h4>Número de habitantes: ${countryFav.paisSpa}</h4>
+    `;
+
+      document.querySelector("#informacion1-3").innerHTML = `
+    <img id="coat-of-arms" src="${countryFav.paisSpa}">
+    <h6 id="subt2">Escudo de ${countryFav.paisCoat}</h6>
+    `;
+    });
   }
 
   addMain();
@@ -106,15 +126,15 @@ if (document.querySelector("#seleccionar")) {
       paisSpa: newData[0].translations.spa.common,
       paisFlag: newData[0].flags.png,
       paisCapital: newData[0].capital,
+      paisPopulation: newData[0].population,
       paisContinent: newData[0].continents,
       paisCoat: newData[0].coatOfArms.svg,
       paisTrans: newData[0].translations.spa.common,
     };
-    console.log(data);
 
     completo.push(data);
-    completo = JSON.stringify(completo);
-    localStorage.setItem("country", completo);
+    // completo = JSON.stringify(completo);
+    localStorage.setItem("country", JSON.stringify(completo));
   }
 
   createSelect();

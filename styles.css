@@ -1,121 +1,327 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-/* --------------HEADER------------------ */
+@media (min-width: 430px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
 
-header {
-  padding: 5vh;
-  background-color: rgb(198, 54, 54);
-  border-radius: 8px;
-  display: flex;
-  justify-content: space-around;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  margin: 0px 0px 15px 0px;
+  /* --------------HEADER------------------ */
+
+  header {
+    padding: 5vh;
+    background-color: rgb(198, 54, 54);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 0px 0px 15px 0px;
+  }
+
+  /* --------------BODY-------------------- */
+
+  body {
+    padding: 2vh;
+    background-color: rgb(252, 231, 231);
+  }
+
+  .linea {
+    border-top: 1px solid rgb(196, 196, 196);
+    height: 0, 5px;
+    width: 100%;
+    padding: 01vh;
+  }
+
+  /* ------------PÁGINA 1-------------------- */
+
+  #list {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 130%;
+    line-height: 200%;
+    list-style: none;
+  }
+
+  li {
+    text-align: center;
+    margin: 0 1vh 0 1vh;
+    padding: 0 2vh 0 2vh;
+  }
+
+  #texto {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 180%;
+    text-align: center;
+    padding: 10px 80px 15px 35px;
+    margin-left: 19%;
+    margin-right: 19%;
+    font-weight: 100;
+  }
+
+  #todo1 {
+    display: none;
+    background-color: beige;
+    border-color: black;
+    border-width: 5px;
+    border-style: inset;
+    padding: 15px 35px 15px 35px;
+    margin: 15px 35px 15px 35px;
+  }
+
+  #pais1 {
+    display: flex;
+    justify-content: center;
+    padding: 15px 35px 15px 35px;
+  }
+
+  #informacion1 {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 15px 25px 15px;
+  }
+
+  #informacion1-2 {
+    line-height: 30px;
+    border: 2px solid black;
+    padding: 15px 35px 15px 35px;
+  }
+
+  #coat-of-arms {
+    height: 213px;
+  }
+
+  /* ------------PÁGINA 2-------------------- */
+
+  #seleccionar {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 290%;
+    padding: 15px 35px 15px 35px;
+    margin: 45px 50px 55px 480px;
+    font-weight: 100;
+  }
+
+  #todo2 {
+    display: none;
+    background-color: beige;
+    border-color: black;
+    border-width: 5px;
+    border-style: inset;
+    padding: 15px 35px 15px 35px;
+    margin: 15px 35px 15px 35px;
+  }
+
+  #btn2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    padding: 15px 25px 15px 25px;
+    border-radius: 15px;
+  }
+
+  #pais2 {
+    display: flex;
+    justify-content: center;
+    padding: 15px 35px 15px 35px;
+  }
+
+  #informacion2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 15px 25px 15px;
+  }
+
+  #informacion2-2 {
+    line-height: 30px;
+    border: 2px solid black;
+    padding: 15px 35px 15px 35px;
+  }
+
+  #coat-of-arms {
+    height: 213px;
+  }
+
+  #subt2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* ---------PIE DE PÁGINA---------------- */
+
+  .page {
+    padding: 2vh;
+    background-color: rgb(198, 54, 54);
+    border-radius: 8px;
+    margin: 10px 600px 5px 550px;
+    text-align: center;
+  }
+
+  #go {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    color: white;
+  }
 }
 
-/* --------------BODY-------------------- */
-body {
-  padding: 2vh;
-  background-color: rgb(252, 231, 231);
-}
+@media (max-width: 430px) {
+  /* --------------HEADER------------------ */
 
-#texto {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 180%;
-  text-align: center;
-  padding: 10px 80px 15px 35px;
-  margin-left: 19%;
-  margin-right: 19%;
-  font-weight: 100;
-}
+  header {
+    padding: 1vh 0vh 1vh 0vh;
+    background-color: rgb(198, 54, 54);
+    border-radius: 8px;
+    line-height: 300%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 0px 0px 15px 0px;
+  }
 
-#seleccionar {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 290%;
-  padding: 15px 35px 15px 35px;
-  margin: 45px 50px 55px 480px;
-  font-weight: 100;
-}
+  /* --------------BODY-------------------- */
 
-#todo2 {
-  display: none;
-  background-color: beige;
-  border-color: black;
-  border-width: 5px;
-  border-style: inset;
-  padding: 15px 35px 15px 35px;
-  margin: 15px 35px 15px 35px;
-}
+  body {
+    padding: 2vh;
+    background-color: rgb(252, 231, 231);
+  }
 
-#btn2 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 100%;
-  padding: 15px 25px 15px 25px;
-  border-radius: 15px;
-  /* margin: 45px 50px 55px 480px; */
-}
+  .linea {
+    border-top: 1px solid rgb(196, 196, 196);
+    height: 0, 5px;
+    width: 100%;
+    padding: 01vh;
+  }
 
-#pais2 {
-  display: flex;
-  justify-content: center;
-  padding: 15px 35px 15px 35px;
-}
+  /* ------------PÁGINA 1-------------------- */
 
-#informacion2 {
-  display: flex;
-  justify-content: space-around;
-  padding: 15px 15px 25px 15px;
-}
+  #list {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 130%;
+    line-height: 200%;
+    list-style: none;
+  }
 
-#informacion2-2 {
-  line-height: 30px;
-  border: 2px solid black;
-  padding: 15px 35px 15px 35px;
-}
+  li {
+    text-align: center;
+    margin: 0 1vh 0 1vh;
+    padding: 0 2vh 0 2vh;
+  }
 
-#coat-of-arms {
-  /* max-width: 30%; */
-  height: 213px;
-}
+  #texto {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 130%;
+    text-align: center;
+    padding: 10px 0px 15px 0px;
+    margin-left: 9%;
+    margin-right: 9%;
+    font-weight: 100;
+  }
 
-#subt2 {
-  display: flex;
-  justify-content: center;
-}
-#list {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 130%;
-  line-height: 200%;
-  list-style: none;
-}
+  #todo1 {
+    display: none;
+    background-color: beige;
+    border-color: black;
+    border-width: 5px;
+    border-style: inset;
+    padding: 15px 35px 15px 35px;
+    margin: 15px 35px 15px 35px;
+  }
 
-li {
-  text-align: center;
-  margin: 0 1vh 0 1vh;
-  padding: 0 2vh 0 2vh;
-}
+  #pais1 {
+    display: flex;
+    justify-content: center;
+    padding: 15px 35px 15px 35px;
+  }
 
-.linea {
-  border-top: 1px solid rgb(196, 196, 196);
-  height: 0, 5px;
-  width: 100%;
-  padding: 01vh;
-}
+  #informacion1 {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 15px 25px 15px;
+  }
 
-/* ---------PIE DE PÁGINA---------------- */
-.page {
-  padding: 2vh;
-  background-color: rgb(198, 54, 54);
-  border-radius: 8px;
-  margin: 10px 600px 5px 550px;
-  text-align: center;
-}
+  #informacion1-2 {
+    line-height: 30px;
+    border: 2px solid black;
+    padding: 15px 35px 15px 35px;
+  }
 
-#go {
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 100%;
-  color: white;
+  #coat-of-arms {
+    height: 213px;
+  }
+
+  /* ------------PÁGINA 2-------------------- */
+
+  #seleccionar {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 290%;
+    padding: 15px 35px 15px 5px;
+    margin: 45px 50px 55px 85px;
+    font-weight: 100;
+  }
+
+  #todo2 {
+    display: none;
+    background-color: beige;
+    border-color: black;
+    border-width: 5px;
+    border-style: inset;
+    padding: 15px 15px 15px 15px;
+    margin: 15px 15px 15px 15px;
+  }
+
+  #btn2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50%;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+  }
+
+  #pais2 {
+    display: flex;
+    justify-content: center;
+    padding: 5px 35px 15px 35px;
+  }
+
+  #informacion2 {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px 25px 0px;
+  }
+
+  #informacion2-2 {
+    line-height: 150px;
+  }
+
+  #informacion2-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #coat-of-arms {
+    display: flex;
+    justify-content: center;
+    height: 213px;
+    padding: 15px 0px 10px 25px;
+  }
+
+  #subt2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* ---------PIE DE PÁGINA---------------- */
+
+  .page {
+    padding: 1vh;
+    background-color: rgb(198, 54, 54);
+    border-radius: 8px;
+    margin: 10px 105px 5px 105px;
+    text-align: center;
+  }
+
+  #go {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    color: white;
+  }
 }
